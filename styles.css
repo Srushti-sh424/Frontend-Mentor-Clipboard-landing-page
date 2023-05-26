@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    color: hsl(210, 10%, 33%);
+    padding-bottom: 14px;
+    font-size: 1.5rem;
+}
+h1, h2{
+    color: hsl(210, 10%, 33%);
+    padding-bottom: 24px;
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+    font-size: 18px;
+    line-height: 150%;
+}
+
+/* ----------------------------------------------------------------------- Section 1 ----------------------------------------------------------------------- */
+.mobile-bg{
+    display: none;
+}
+
+.section1{
+    height: 95vh;
+}
+
+.desktop-bg{
+    position: absolute;   
+}
+
+.main-text{
+    width: 45%;
+    position: relative;
+    top: 20%;
+    left: 27.5%;
+    align-items: center;
+    text-align: center;
+}
+
+.main-text > p{
+    padding-bottom: 40px;
+}
+
+.main-logo{
+    padding-bottom: 70px;
+}
+
+/* ----------------------------------------------------------------------- Section 2 ----------------------------------------------------------------------- */
+
+.upper{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+.lower{
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.lower-img{
+    position: relative;
+    left: -50px
+}
+
+.lower-text{
+    margin-top: 60px;
+    margin-left: 100px;
+    width: 27%;
+}
+
+.lower-text > p{
+    padding-bottom: 40px;
+    line-height: 170%;
+}
+
+/* ----------------------------------------------------------------------- Section 3 ----------------------------------------------------------------------- */
+
+.section3{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+}
+
+.text{
+    margin-top: 150px;
+}
+
+.img{
+    margin-top: 70px;
+}
+
+/* ----------------------------------------------------------------------- Section 4 ----------------------------------------------------------------------- */
+
+.section4{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.work-logo-text{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.work-logo-text > div{
+    max-width: 450px;
+    padding: 20px;
+}
+
+.work-logo-text > div > img{
+    padding: 10px;
+}
+
+.work-logos{
+    margin-top: 130px;
+}
+
+.work-logos > img {
+    padding: 0 50px;
+}
+
+/* ----------------------------------------------------------------------- Section 5 ----------------------------------------------------------------------- */
+
+.section5{
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section5 > h2{
+    margin-top: 150px;
+}
+
+.section5 > p{
+    margin-bottom: 40px;
+}
+
+/* -----------------------------------------------------------------------  footer ----------------------------------------------------------------------- */
+
+footer{
+    margin-top: 100px;
+    background-color: hsl(201, 11%, 90%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.foot-img{
+    margin-left: 120px;
+}
+
+.foot-img > img{
+    width: 50%;
+}
+
+.foot-content{
+    margin-right: 150px;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row: repeat(2/ 1fr);
+}
+.a{
+    grid-column: 1 / span 4;
+    grid-row: 1;
+}
+.b{
+    grid-column: 5 / span4;
+    grid-row: 1;
+}
+.c{
+    grid-column: 9 / span 4;
+    grid-row: 1;
+}
+.d{
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    padding-top: 10px;
+}
+.e{
+    grid-column: 5 / span4;
+    grid-row: 2;
+    padding-top: 10px;
+}
+
+.foot-content > div > a {
+    text-decoration: none;
+}
+
+.foot-content > div > a > p{
+    color: hsl(210, 10%, 33%);
+}
+
+.social{
+    margin-right: 100px;
+}
+
+.social > a > img{
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------  button  ----------------------------------------------------------------------- */
+
+
+.btn {
+    -webkit-border-radius: 26;
+    -moz-border-radius: 26;
+    border-radius: 26px;
+    color: #ffffff;
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    border: none;
+}
+
+.ios{
+    margin-right: 20px;
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 3px 3px #049882;
+}
+
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 3px 3px #4051dd;
+}
+  
+.btn:hover {
+    opacity: 70%;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* --------------------------------------------------------  Mobile  ----------------------------------------------------------------- */
+
+
+@media (max-width: 375px) {
+
+    body{
+        margin: 0 15px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+    h1, h2{
+        color: hsl(210, 10%, 33%);
+        padding-bottom: 20px;
+    }
+    
+    .section1{
+        height: 100vh;
+    }
+
+    .mobile-bg{
+        display: block;
+        position: absolute;
+    }
+    .desktop-bg{
+        display: none;
+    }
+    
+    .main-text{
+        width: auto;
+        /* margin: 0 10px; */
+        position: relative;
+        top: 40%;
+        left: 0%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main-text > p{
+        padding-bottom: 40px;
+    }
+    
+    .main-logo{
+        padding-bottom: 40px;
+    }
+
+    /* ----------------------------------------------------------------------- Section 2 ----------------------------------------------------------------------- */
+    
+    .section2{
+        margin-top: 300px;
+    }
+    .upper{
+        width: auto;
+    }
+
+    .lower-img > img{
+        width: 335px;
+    }
+    .lower{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lower-img{
+        left: 0;
+        margin-top: 40px;
+    }
+
+    .lower-text{
+        margin-top: 50px;
+        margin-left: 0;
+        width: auto;
+    }
+    .lower-text > p{
+        padding: 0 30px 40px 30px;
+    } 
+
+/* ----------------------------------------------------------------------- Section 3 ----------------------------------------------------------------------- */
+
+    .section3{
+        width: auto;
+    }
+
+    .text{
+        margin-top: 100px;
+    }
+
+    .img > img{
+        width: 335px;
+    }
+
+/* ----------------------------------------------------------------------- Section 4 ----------------------------------------------------------------------- */
+
+    .section4{
+        margin-top: 100px;
+    }
+
+    .work-logo-text{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .work-logos{
+        margin-top: 100px;
+    }
+
+    .work-logos > img {
+        padding: 30px 50px;
+    }
+
+/* ----------------------------------------------------------------------- Section 5 ----------------------------------------------------------------------- */
+
+    .section5{
+        width: auto;
+    }
+
+    .section5 > h2{
+        margin-top: 100px;
+    }
+
+/* -----------------------------------------------------------------------  footer ----------------------------------------------------------------------- */
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .foot-img{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .foot-content{
+        margin-top: 20px;
+        margin-right: 0px;
+        width: auto;
+        display: block;
+    }
+
+    .d{
+        padding-top: 0px;
+    }
+    .e{
+        padding-top: 0px;
+    }
+
+    .foot-content > div > a > p{
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .social{
+        margin: 20px 0 50px 0;
+    }
+    /* -----------------------------------------------------------------------  button  ----------------------------------------------------------------------- */
+
+
+    .btn {
+        padding: 15px 70px 15px 70px;
+        font-size: 18px;
+    }
+
+    .ios{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .mac{
+        margin: 0 auto;
+    }
+
+    }
